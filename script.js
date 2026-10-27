@@ -21,3 +21,12 @@ let stringLength = myString.length;
 //string to uppercase
 let upperCaseString = myString.toUpperCase();
 
+//js Number Methods
+let myNumber = 123.456;
+myNumber = myNumber.toFixed(2); // rounds to 2 decimal places
+document.getElementById("jsNumberMethods").innerHTML = "Rounded Number: " + myNumber;
+
+ let myNumber2 = 123.456;
+ myNumber2 = myNumber2.toPrecision(4); // formats to 4 significant digits
+ document.getElementById("jsNumberMethods2").innerHTML += "<br>Formatted Number: " + myNumber2;
+
