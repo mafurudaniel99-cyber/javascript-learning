@@ -72,3 +72,9 @@ const interval = setInterval(() => {
     count++;
     document.getElementById("timer").innerHTML = `This message is displayed every 2 seconds. Count: ${count}`;
 }, 2000);   
+ //A zero delay does not mean that the JS will execute immediately.it means that the function will be executed after the currennt execution context is complited.
+  let v =1;
+  const  zeroDelay = setTimeout(() =>{
+    v++;
+    document.getElementById("timer").innerText = `Zero delay message. Value: ${v}`;
+  }, 0);
