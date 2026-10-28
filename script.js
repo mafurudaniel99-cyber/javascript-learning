@@ -30,3 +30,21 @@ document.getElementById("jsNumberMethods").innerHTML = "Rounded Number: " + myNu
  myNumber2 = myNumber2.toPrecision(4); // formats to 4 significant digits
  document.getElementById("jsNumberMethods2").innerHTML += "<br>Formatted Number: " + myNumber2;
 
+//js functions
+function add(){
+    let a =2;
+    let b =3;
+    let c = a + b;
+    return c;
+}
+
+//function expression a function stored in a variable
+//is the js statement so it must end with semicolons and they can not be called before they are defined.
+ const substruct = function(a,b){return a-b;};
+  //after a functionn expression stored in a variable now you can use that variable as a function
+
+  substruct(5,3); //returns 2
+
+
+//arrow function
+const multiply = (x, y) => x * y;
