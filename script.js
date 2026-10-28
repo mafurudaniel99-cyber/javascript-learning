@@ -78,3 +78,48 @@ const interval = setInterval(() => {
     v++;
     document.getElementById("timer").innerText = `Zero delay message. Value: ${v}`;
   }, 0);
+
+
+
+  //js variables are the containers or variable s that thy can store the values and functions and objects and other data types. they are used to store data in a program and can be changed or updated as needed. they are declared using the var, let, or const keywords. var is function-scoped, let is block-scoped, and const is also block-scoped but cannot be reassigned after its initial assignment.
+
+  //object
+  const car = {
+  type: "Fiat",
+  model: "500",
+  color: "white"
+};
+   
+  // objectName.property
+      let seemodel = car.model; //returns  "500"
+// object functions(methods)
+      const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+//object this keyword
+//The this keyword refers to the current object that the code is being executed in. it can be used to access properties and methods of the current object. in a method, this refers to the object that the method is a property of. in a function, this refers to the global object (window in browsers) unless the function is called as a method of an object.
+const person2 ={
+    firstName: "Daniel",
+    lastname: "Mafuru",
+    fullName: function(){
+        //this refers to the current object person2
+        return this.firstName + " " + this.lastname;; 
+    }
+}
+
+//now how to display javascript objects?
+// Create an Object
+const people = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+// Add Properties
+let text = people.name + "," + people.age + "," + people.city;
