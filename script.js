@@ -48,3 +48,27 @@ function add(){
 
 //arrow function
 const multiply = (x, y) => x * y;
+
+// javascrript timers
+
+//are used to run a functtion after a delay or at a regular iinterval. there are two main types of timers in js these are  setTimeout and setInterval
+
+//setTimeout runs a function after some delay in milliseconds.
+//setInterval runs a function repeatedly at a specified interval in milliseconds.
+
+//clearInterval stops an interval
+//clearTimeout stops a timeout function from running if it has not executed yet.
+
+//setTimeout syntax
+//setTimeout(function, milliseconds);
+setTimeout(() => {
+    document.getElementById("timer").innerHTML = "This message is displayed after 3 seconds";
+}, 3000);
+
+//setInterval syntax    
+//setInterval(function, milliseconds);
+let count = 0;
+const interval = setInterval(() => {
+    count++;
+    document.getElementById("timer").innerHTML = `This message is displayed every 2 seconds. Count: ${count}`;
+}, 2000);   
