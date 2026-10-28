@@ -123,3 +123,17 @@ const people = {
 
 // Add Properties
 let text = people.name + "," + people.age + "," + people.city;
+
+//constructors
+// are used to create a new object with the same properties and methods as an existing object. they are defined using a function and are called using tthe new keyword. 
+//they can also be used to create multiple instances of an object with different values for the properties. they are a way to create objects that share the same structure and behavior.
+function Animal(region,type,sound){
+  this.region = region;
+  this.type = type;
+  this.sound = sound;
+}
+
+//now the similar objects can be created by using the constructor above
+const dog = new Animal("africa","dog","woof");
+const cat = new Animal("europe","cat","meow");
+const cow = new Animal("asia","cow","moo");
